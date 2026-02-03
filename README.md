@@ -1,107 +1,90 @@
-# Trying-ChatLogger
-🎯 Core Functionality
+# Trying ChatLogger
 
-Real-time chat logging with message capture from both Legacy Chat and TextChatService
-Line counter with rotation system (auto-save after X messages)
-Auto-scroll toggle - stick to bottom or manual scroll
-Font size controls (A- / A+) with persistent sizing
-Text wrapping toggle - enable/disable line wrapping
-Timestamp toggle - show/hide message timestamps
-Message limit system - prevents memory overflow (configurable max lines)
+## 🎯 Core Functionality
+* **Real-time chat logging**: Message capture from both Legacy Chat and TextChatService.
+* **Line counter**: Rotation system included (auto-save after X messages).
+* **Auto-scroll toggle**: Stick to bottom or manual scroll options.
+* **Font size controls**: (A- / A+) buttons with persistent sizing.
+* **Text wrapping toggle**: Enable or disable line wrapping.
+* **Timestamp toggle**: Show or hide message timestamps.
+* **Message limit system**: Prevents memory overflow (configurable max lines).
 
-🔍 Search & Filter System
+## 🔍 Search & Filter System
+* **Internal search bar**: Filter messages in real-time by keyword.
+* **Player whitelist**: Only show messages from selected users.
+* **Blacklist system**: Block specific users from being logged.
+* **Auto-filter detection**: Automatically adds new players to whitelist.
+* **Search functionality**: Located in filter window to find players quickly.
 
-Internal search bar - filter messages in real-time by keyword
-Player whitelist - only show messages from selected users
-Blacklist system - block specific users from being logged
-Auto-filter detection - automatically adds new players to whitelist
-Search functionality in filter window to find players quickly
+## 🎨 Visual Customization
+* **Custom user colors**: Assign unique colors per username.
+* **Color presets**: Quick color selection buttons (6 presets).
+* **Theme customization**: Change background and accent colors.
+* **Opacity/transparency slider**: Make the window semi-transparent.
+* **Click-through mode**: Allow clicks to pass through to the game.
+* **Resizable windows**: Drag edges to resize (Windows-style).
+* **Draggable interface**: Move windows anywhere on screen.
+* **Minimize function**: Collapse to title bar only.
+* **Professional dark theme**: Designed with rounded corners.
 
-🎨 Visual Customization
+## 🔔 Smart Monitoring
+* **Keyword alert system**: Define words to watch for.
+* **Visual highlights**: Messages with keywords get a red background.
+* **Sound notifications**: Plays alert sound when keyword detected.
+* **Display Name toggle**: Switch between showing DisplayName or Username.
+* **Whisper detection**: Special color for private messages.
+* **Team chat detection**: Different color for team messages.
 
-Custom user colors - assign unique colors per username
-Color presets - quick color selection buttons (6 presets)
-Theme customization - change background and accent colors
-Opacity/transparency slider - make the window semi-transparent
-Click-through mode - allow clicks to pass through to the game
-Resizable windows - drag edges to resize (Windows-style)
-Draggable interface - move windows anywhere on screen
-Minimize function - collapse to title bar only
-Professional dark theme with rounded corners
+## 💾 Data Management
+* **Auto-save to file**: Saves chat logs as `.txt` files.
+* **Manual save button**: Save current session anytime.
+* **Copy to clipboard**: Copy individual lines (via click or right-click).
+* **Copy all function**: Copy entire chat history.
+* **Auto-rotation saves**: Creates new file after X messages.
+* **Configuration persistence**: Saves all settings to JSON file.
+* **Session recovery**: Remembers window position, size, filters, colors, and keywords.
 
-🔔 Smart Monitoring
+## 🛡️ Advanced Features
+* **Context menu** (Right-click on messages):
+    * Copy individual line.
+    * Copy all chat history.
+* **Panic key (RightCtrl)**: Instantly hide/show entire interface.
+* **Close confirmation**: Prevents accidental closure.
+* **Multiple window management**:
+    * Main chat window.
+    * Filter/whitelist window.
+    * Blacklist window.
+    * Color customization window.
+    * Settings window.
+* **Settings window includes**:
+    * Opacity slider.
+    * Click-through toggle.
+    * Display name toggle.
+    * Keyword manager with add/remove.
+    * Blacklist quick access.
 
-Keyword alert system - define words to watch for
-Visual highlights - messages with keywords get red background
-Sound notifications - plays alert sound when keyword detected
-Display Name toggle - switch between showing DisplayName or Username
-Whisper detection - special color for private messages
-Team chat detection - different color for team messages
+## 🎮 User Experience
+* **Clean UI**: No placeholder text in textboxes (starts clean).
+* **Responsive design**: Adapts to different window sizes.
+* **Professional tooltips**: Clear button labels.
+* **Color-coded messages**: Whispers (blue), Team (green), Keywords (red).
+* **Smooth scrolling**: Automatic or manual control.
+* **Memory efficient**: Auto-prune old messages to keep performance high.
+* **Multi-language ready**: Spanish UI (easily translatable).
 
-💾 Data Management
+## 📊 Technical Features
+* **Dual chat system support**: Works with both old and new Roblox chat.
+* **Username/UserId filtering**: Supports both formats.
+* **Async player name fetching**: Works even when player has left the server.
+* **Error handling**: Graceful fallbacks for missing functions.
+* **File system integration**: Uses `writefile`/`readfile` when available.
+* **Sound system integration**: Plays notification sounds.
 
-Auto-save to file - saves chat logs as .txt files
-Manual save button - save current session anytime
-Copy to clipboard - copy individual lines (right-click menu)
-Copy all function - copy entire chat history
-Auto-rotation saves - creates new file after X messages
-Configuration persistence - saves all settings to JSON file
-Session recovery - remembers window position, size, filters, colors, keywords
-
-🛡️ Advanced Features
-
-Context menu (right-click on messages):
-
-Copy individual line
-Copy all chat history
-
-
-Panic key (RightCtrl) - instantly hide/show entire interface
-Close confirmation - prevents accidental closure
-Multiple window management:
-
-Main chat window
-Filter/whitelist window
-Blacklist window
-Color customization window
-Settings window
-
-
-Settings window includes:
-
-Opacity slider
-Click-through toggle
-Display name toggle
-Keyword manager with add/remove
-Blacklist quick access
-
-
-
-🎮 User Experience
-
-Clean UI - no placeholder text in textboxes
-Responsive design - adapts to different window sizes
-Professional tooltips and button labels
-Color-coded messages - whispers (blue), team (green), keywords (red)
-Smooth scrolling - automatic or manual control
-Memory efficient - auto-prune old messages
-Multi-language ready - Spanish UI (easily translatable)
-
-📊 Technical Features
-
-Dual chat system support - works with both old and new Roblox chat
-Username/UserId filtering - supports both formats
-Async player name fetching - works even when player left
-Error handling - graceful fallbacks for missing functions
-File system integration - uses writefile/readfile when available
-Sound system integration - plays notification sounds
-
-🔧 Customization Options
-
-Adjustable rotation frequency
-Configurable max lines
-Custom save directory
-Silent rotation mode
-Clear after rotation option
-Multiple color preset buttons
-Full RGB color control (0-255 per channel)
+## 🔧 Customization Options
+* Adjustable rotation frequency.
+* Configurable max lines.
+* Custom save directory.
+* Silent rotation mode.
+* Clear after rotation option.
+* Multiple color preset buttons.
+* Full RGB color control (0-255).
