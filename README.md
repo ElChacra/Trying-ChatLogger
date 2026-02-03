@@ -4,7 +4,7 @@ A full-featured real-time chat logger for Roblox with multi-language support, pe
 
 ---
 
-## 🇬🇧 English
+## 🇺🇸 English
 
 ### Features
 
