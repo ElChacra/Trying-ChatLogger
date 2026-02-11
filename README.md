@@ -1215,7 +1215,7 @@ MIT License - Feel free to use, modify, and distribute.
 ## 🙏 Credits
 
 **Version**: 1.1  
-**Author**: [Your Name]  
+**Author**: warn_GameTester
 **Last Updated**: February 11, 2026
 
 ---
